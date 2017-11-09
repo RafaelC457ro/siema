@@ -153,7 +153,7 @@ export default class Siema {
       const elementContainer = document.createElement('div');
       elementContainer.style.cssFloat = 'left';
       elementContainer.style.float = 'left';
-      elementContainer.style.width = `${100 / this.innerElements.length}%`;
+      elementContainer.style.width = `${(this.selectorWidth / this.perPage)}px`;
       elementContainer.appendChild(this.innerElements[i]);
       docFragment.appendChild(elementContainer);
     }
@@ -441,7 +441,7 @@ export default class Siema {
       const elementContainer = document.createElement('div');
       elementContainer.style.cssFloat = 'left';
       elementContainer.style.float = 'left';
-      elementContainer.style.width = `${100 / this.innerElements.length}%`;
+      elementContainer.style.width = `${this.selectorWidth}px`;
       elementContainer.appendChild(this.innerElements[i]);
       docFragment.appendChild(elementContainer);
     }
